@@ -15,6 +15,7 @@
 		8153CAF02126B50100ED898B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8153CAEF2126B50100ED898B /* main.m */; };
 		8153CAFA2126B50100ED898B /* WQWaterWaveAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8153CAF92126B50100ED898B /* WQWaterWaveAnimationTests.m */; };
 		8153CB052126B50100ED898B /* WQWaterWaveAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8153CB042126B50100ED898B /* WQWaterWaveAnimationUITests.m */; };
+		8153CB152126B55200ED898B /* WQWaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8153CB142126B55200ED898B /* WQWaterWaveView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		8153CB002126B50100ED898B /* WQWaterWaveAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WQWaterWaveAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8153CB042126B50100ED898B /* WQWaterWaveAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQWaterWaveAnimationUITests.m; sourceTree = "<group>"; };
 		8153CB062126B50100ED898B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8153CB132126B55200ED898B /* WQWaterWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQWaterWaveView.h; sourceTree = "<group>"; };
+		8153CB142126B55200ED898B /* WQWaterWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQWaterWaveView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		8153CADF2126B50000ED898B /* WQWaterWaveAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				8153CB122126B51200ED898B /* WQAnimation */,
 				8153CAE02126B50000ED898B /* AppDelegate.h */,
 				8153CAE12126B50000ED898B /* AppDelegate.m */,
 				8153CAE32126B50000ED898B /* ViewController.h */,
@@ -130,6 +134,15 @@
 				8153CB062126B50100ED898B /* Info.plist */,
 			);
 			path = WQWaterWaveAnimationUITests;
+			sourceTree = "<group>";
+		};
+		8153CB122126B51200ED898B /* WQAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				8153CB132126B55200ED898B /* WQWaterWaveView.h */,
+				8153CB142126B55200ED898B /* WQWaterWaveView.m */,
+			);
+			path = WQAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8153CAE52126B50000ED898B /* ViewController.m in Sources */,
+				8153CB152126B55200ED898B /* WQWaterWaveView.m in Sources */,
 				8153CAF02126B50100ED898B /* main.m in Sources */,
 				8153CAE22126B50000ED898B /* AppDelegate.m in Sources */,
 			);
@@ -370,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -422,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
